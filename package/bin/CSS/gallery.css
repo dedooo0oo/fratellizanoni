@@ -128,7 +128,6 @@ background: #eef8ff ;
     border-radius: 5px;
     cursor: pointer;
 }
-
 /*                                          FOOTER                    */
 footer {
     width: 100%;
@@ -271,15 +270,15 @@ animation: moving 2s linear infinite;
 }
 }
 
-@media (max-width : 700px){
-footer{
-    bottom:unset;
-    position: relative;
-}
-.col{
-    flex-basis: 100%;
-}
-.col:nth-child(2),.col:nth-child(3) {
-    flex-basis: 100%;
-}
+@media  (max-width : 1200px){
+    .gallery img{
+        max-width: 80%;
+    }
+} 
+@media (max-width:550px){
+    .header-right{
+        float:none;
+        position: relative;
+        margin-top:120px;
+    }
 }

@@ -17,6 +17,7 @@ body{
     padding: 10px 10px;
     border-bottom-right-radius: 50px;
     position: relative;
+    margin-bottom: auto;
 }
 
 .header a {
@@ -192,14 +193,5 @@ hr{
     }
 }
 
-@media (max-width : 700px){
-    footer{
-        bottom:unset;
-    }
-    .col{
-        flex-basis: 100%;
-    }
-    .col:nth-child(2),.col:nth-child(3) {
-        flex-basis: 100%;
-    }
-}
+
+	
