@@ -46,8 +46,22 @@ body{
 }
 
 
+/*                                          FOOTER                    */
+.cotainer-box {
+    display: flex;
+    align-items: center;
+}
 
+.container-text {
+    flex: 1;
+    padding-right: 20px; /* Adjust the spacing between text and image */
+}
 
+.container-img img {
+    width: 100%; /* Make sure the image takes the full width of its container */
+    max-width: 300px; /* Adjust the maximum width of the image */
+    height: auto; /* Maintain the aspect ratio */
+}
 
 
 
@@ -193,5 +207,46 @@ hr{
     }
 }
 
+@media (max-width: 1220px) and (max-height: 300px) {
+    .custom-contact-left {
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 
+    .custom-contact-container {
+        align-content: center;
+        display: table-row;
+    }
+
+    .custom-contact-right iframe {
+        size-adjust: 70%;
+    }
+}
+
+@media (max-width: 1220px) and (max-height: 812px) {
+    .custom-contact-left {
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .custom-contact-container {
+        align-content: center;
+        display: table-footer-group;
+    }
+}
+
+@media (max-width: 1000px) {
+    .custom-contact-right iframe {
+        height: 600px;
+    }
+}
+
+@media (max-width: 750px) {
+    .custom-contact-container {
+        align-content: center;
+        display: table-footer-group;
+    }
+}
 	
