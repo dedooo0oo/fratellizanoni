@@ -46,21 +46,21 @@ body{
 }
 
 
-/*                                          FOOTER                    */
-.cotainer-box {
+/*                                          HOME                      */
+.container-box {
     display: flex;
     align-items: center;
 }
 
 .container-text {
     flex: 1;
-    padding-right: 20px; /* Adjust the spacing between text and image */
+    padding-right: 20px;
 }
 
 .container-img img {
-    width: 100%; /* Make sure the image takes the full width of its container */
-    max-width: 300px; /* Adjust the maximum width of the image */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 
@@ -207,6 +207,25 @@ hr{
     }
 }
 
+@media (max-width: 1220px) {
+    .custom-container-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-container-text {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .custom-container-img img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+/* Nuove regole per il layout con form a sinistra e iframe a destra */
 @media (max-width: 1220px) and (max-height: 300px) {
     .custom-contact-left {
         align-items: center;
@@ -217,6 +236,7 @@ hr{
     .custom-contact-container {
         align-content: center;
         display: table-row;
+        overflow-x: auto; /* Abilita lo scrolling orizzontale se necessario */
     }
 
     .custom-contact-right iframe {
@@ -234,6 +254,7 @@ hr{
     .custom-contact-container {
         align-content: center;
         display: table-footer-group;
+        overflow-x: auto; /* Abilita lo scrolling orizzontale se necessario */
     }
 }
 
@@ -247,6 +268,6 @@ hr{
     .custom-contact-container {
         align-content: center;
         display: table-footer-group;
+        overflow-x: auto; /* Abilita lo scrolling orizzontale se necessario */
     }
 }
-	
