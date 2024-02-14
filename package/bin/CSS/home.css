@@ -92,7 +92,6 @@ body{
 .content .colonne{
     display: flex;
     justify-content: space-between;
-    border: 5px solid #ccc;
 }
 
 .content .colonne .colonna-txt{
@@ -349,10 +348,8 @@ animation: moving 2s linear infinite;
     .content .colonne {
         display:contents;
         justify-content: none;
-        border: 5px solid #ccc;
     }
     .content .colonne .colonna-txt{
-        border: 5px solid #ccc;
         justify-items: center;
         float:none;
         max-width: 80%;
@@ -363,7 +360,6 @@ animation: moving 2s linear infinite;
     }
 
     .content .colonne .colonna-txt h2{
-        border: 5px solid #ccc;
         align-items: center;
         font-size: 45px;
         margin-left:20%;
@@ -373,7 +369,6 @@ animation: moving 2s linear infinite;
         font-family:'Times New Roman', Times, serif;
     }
     .content .colonne .colonna-txt p {
-        border: 5px solid #ccc;
         float:none;
         max-width: 85%;
         margin-left: 7.5%;
