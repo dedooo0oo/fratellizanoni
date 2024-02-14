@@ -5,8 +5,6 @@
     <title>fratellizanoni-findUs</title>
     <link rel="stylesheet" href ="../CSS/findus.css">
     <script src="https://kit.fontawesome.com/207b04dcba.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 </head>
 
 <body>
@@ -31,12 +29,23 @@
             <input type="text" name="Nome" placeholder="Nome" class="contact-inputs" required>
             <input type="email" id="emailInput" name="email" placeholder="Email" class="contact-inputs" required>            
             <textarea name="message" placeholder="Invia un messaggio" class="contact-inputs"></textarea>
-            <div class="g-recaptcha" data-sitekey="6LeOR3MpAAAAAD0iME5YM7AucfTPsChekWXV_yhh"></div>
-            <button class="g-recaptcha" data-sitekey="6LeOR3MpAAAAAD0iME5YM7AucfTPsChekWXV_yhh" data-callback='onSubmit'data-action='submit'>Submit</button>
             <button type="submit">Submit<img src="../../img/freccia.png" width="30px"></button>
         </form>
         <div class="contact-right">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.50443315954!2d10.755906176726953!3d45.520053729709694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781ee4e21ce9fb7%3A0xdc9171a678f1d0d4!2sVia%20Verona%2C%2091A%2C%2037011%20Calmasino%20VR!5e0!3m2!1sit!2sit!4v1707739731035!5m2!1sit!2sit" width="1200px" height="450px" style="border: 2pxs;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
+    </div>
+
+    <div class="container-captcha">
+        <h1>Contact Form Google reCaptcha v3</h1>
+        <div class="cw-frm">
+        <form id="contactForm" method="post" action=""></form>
+            <h3>Contact form</h3>
+            <input type="hidden" name="access_key" value="d55de37d-260d-421c-8245-b751d4b9ce4a">
+            <input type="text" name="Nome" placeholder="Nome" class="contact-inputs" required>
+            <input type="email" id="emailInput" name="email" placeholder="Email" class="contact-inputs" required>            
+            <textarea name="message" placeholder="Invia un messaggio" class="contact-inputs"></textarea>
+            <button type="submit">Submit<img src="../../img/freccia.png" width="30px"></button>
         </div>
     </div>
 
