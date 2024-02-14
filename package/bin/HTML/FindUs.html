@@ -6,6 +6,20 @@
     <link rel="stylesheet" href ="../CSS/findus.css">
     <script src="https://kit.fontawesome.com/207b04dcba.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function validateRecaptcha() {
+            var response = grecaptcha.getResponse();
+    
+            if (response.length === 0) {
+                // Non è stata effettuata la verifica reCAPTCHA
+                alert("Completa la verifica reCAPTCHA prima di inviare il modulo.");
+                return false;
+            } else {
+                // Verifica reCAPTCHA riuscita, il modulo può essere inviato
+                return true;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -21,7 +35,7 @@
     </header>
     
     <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" class="contact-left" method="post">
+        <form action="https://api.web3forms.com/submit" class="contact-left" method="post" onsubmit="return validateRecaptcha()">
             <div class="contact-left-title">
                 <h2>Contattaci</h2>
                 <hr>
