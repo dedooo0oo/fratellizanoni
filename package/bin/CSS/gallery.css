@@ -6,7 +6,7 @@
 }
 
 body{
-background: #eef8ff ;
+background: #e9f9ff ;
 }
 
 /*                                          HEADER                    */
@@ -25,7 +25,7 @@ background: #eef8ff ;
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px; 
+    font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
 }
@@ -43,7 +43,6 @@ background: #eef8ff ;
 .header-right {
     float: right;
 }
-
 /*                                          GALLERY                   */
 
 .gallery {
@@ -279,6 +278,17 @@ animation: moving 2s linear infinite;
     .header-right{
         float:none;
         position: relative;
-        margin-top:120px;
+        margin-top:150px;
     }
 }
+@media (max-width:420px){
+    form {
+        width:300px;
+    }
+
+    .social-icons .fab{
+        margin:5px;
+    }
+}
+
+

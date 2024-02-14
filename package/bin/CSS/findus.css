@@ -7,7 +7,7 @@
 }
 
 body{
-background: #eef8ff ;
+background: #e9f9ff ;
 font-family: "Outfit";
 display: table-row;
 }
@@ -21,6 +21,7 @@ display: table-row;
     padding: 10px 10px;
     border-bottom-right-radius: 50px;
     position: relative;
+    margin-bottom: auto;
 }
 
 .header a {
@@ -29,7 +30,7 @@ display: table-row;
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 18px; 
     line-height: 25px;
     border-radius: 4px;
 }
@@ -195,12 +196,12 @@ color: #fff;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
-  }
+}
   
   .form-footer form .far {
     font-size: 18px;
     margin-right: 10px;
-  }
+}
   
   .form-footer form input {
     width: 100%;
@@ -208,7 +209,7 @@ color: #fff;
     color: #ccc;
     border: 0;
     outline: none;
-  }
+}
   
   .form-footer form button {
     background: transparent;
@@ -217,7 +218,7 @@ color: #fff;
     outline: none;
     font-size: 16px;
     color: #ccc;
-  }
+}
   
 
 .social-icons .fab{
@@ -314,53 +315,21 @@ animation: moving 2s linear infinite;
     }
 }
 
-
-
-
-
-
-
-
-
-
-/*@media (max-height: 400px){
-    .contact-right iframe{
-        margin-left:20px;
-        height: 20px;
-    }
-    .contact-container{
-        margin-top: 40px;
-        width: 90%;
-    }
-    .contact-left-title{
-        color: #1085b0;
-        font-size: 30px;
-        margin-bottom: 5px;
-        margin-top:5px;
+@media (max-width:550px){
+    .header-right{
+        float:none;
+        position: relative;
+        margin-top:150px;
     }
 }
-@media (max-height: 450px){
-    .contact-right iframe{
-        margin-left:20px;
-        height: 20px;
-    }
-    .contact-container{
-        margin-top: 20px;
-        width: 90%;
-    }
-}
-@media (max-height: 600px){
-    .contact-right iframe{
-        height: 500px;
-        max-width: 95%;
-        margin-left: 10px;
-    }
-}
-@media (max-height: 828px){
-    .contact-right{
-        margin-bottom: 20px;
-    }
-}
-*/
 
+@media (max-width:420px){
+    form {
+        width:300px;
+    }
+
+    .social-icons .fab{
+        margin:5px;
+    }
+}
 
