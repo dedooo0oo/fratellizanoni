@@ -92,6 +92,7 @@ body{
 .content .colonne{
     display: flex;
     justify-content: space-between;
+    border: 5px solid #ccc;
 }
 
 .content .colonne .colonna-txt{
@@ -107,6 +108,7 @@ body{
     font-size: 20px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
 }
 .content .colonne .colonna-txt p strong{
     color:#1085b0;
@@ -122,6 +124,7 @@ body{
 .content .colonne .gallery-container{
     max-width: 100%;
     max-height: 100%;
+    margin-top: 50px;
 }
 
 .content .colonne .gallery-container .prev, .next {
@@ -335,14 +338,89 @@ animation: moving 2s linear infinite;
         position: relative;
         margin-top:150px;
     }
-}
-@media (max-width:420px){
-    form {
-        width:300px;
-    }
-
-    .social-icons .fab{
-        margin:5px;
+    .content .banner-card .banner-text{
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
+@media (max-width:1415px){
+    .content .colonne {
+        display:contents;
+        justify-content: none;
+        border: 5px solid #ccc;
+    }
+    .content .colonne .colonna-txt{
+        border: 5px solid #ccc;
+        justify-items: center;
+        float:none;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-right: none;
+        padding-right: none;
+    }
+
+    .content .colonne .colonna-txt h2{
+        border: 5px solid #ccc;
+        align-items: center;
+        font-size: 45px;
+        margin-left:20%;
+        max-width: 60%;
+        margin-right: 20%;
+        color: #1085b0;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .content .colonne .colonna-txt p {
+        border: 5px solid #ccc;
+        float:none;
+        max-width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        font-size: 25px;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media (max-width:1415px){
+    .content .colonne .colonna-txt h2{
+        justify-items: center;
+    }
+}
+
+@media (max-width:800px){
+    .content .colonne .colonna-txt h2{
+        font-size: 36px;
+    }
+    .content .colonne .colonna-txt p{
+        font-size: 20px;
+    } 
+}
+
+@media (max-width:500px){
+
+    .content .colonne .colonna-txt p {
+        float:none;
+        max-width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 20px;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .content .colonne .colonna-txt h2{
+        font-size: 36px;
+    }
+}
+
+@media (max-width:500px){
+
+    .content .colonne .colonna-txt p {
+        font-size: 18px;
+    }
+    .content .colonne .colonna-txt h2{
+        font-size: 26px;
+    }
+}
